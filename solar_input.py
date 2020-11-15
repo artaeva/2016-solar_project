@@ -74,13 +74,13 @@ def parse_planet_parameters(line, planet):
     **planet** — объект планеты.
     """
     planetp = line.split()
-    planet.R = int(planetp[1])
+    planet.R = float(planetp[1])
     planet.color = planetp[2]
-    planet.m = int(planetp[3])
-    planet.x = int(planetp[4])
-    planet.y = int(planetp[5])
-    planet.Vx = int(planetp[6])
-    planet.Vy = int(planetp[7])
+    planet.m = float(planetp[3])
+    planet.x = float(planetp[4])
+    planet.y = float(planetp[5])
+    planet.Vx = float(planetp[6])
+    planet.Vy = float(planetp[7])
     pass
 
 
